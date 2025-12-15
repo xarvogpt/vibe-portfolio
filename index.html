@@ -4,23 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>내 포트폴리오</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>안녕하세요, 개발자입니다</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">소개</a></li>
-                <li><a href="#projects">프로젝트</a></li>
-                <li><a href="#contact">연락처</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <!-- 왼쪽 사이드바 -->
+        <aside class="sidebar">
+            <div class="profile">
+                <div class="profile-img">
+                    <img src="https://via.placeholder.com/150" alt="프로필 사진">
+                </div>
+                <h1>안녕하세요, 개발자입니다</h1>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#services"><i class="fas fa-briefcase"></i> Services</a></li>
+                    <li><a href="#projects"><i class="fas fa-code"></i> Projects</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <p>© 2025 My Portfolio</p>
+            </div>
+        </aside>
+
+        <!-- 메인 콘텐츠 -->
+        <main class="main-content">
 
     <section id="about" class="section">
         <h2>소개</h2>
-        <p>웹 개발자로서 다양한 프로젝트를 진행해왔습니다.</p>
+        <div class="work-experience">
+            <div class="company">
+                <h3>넥스트웹솔루션 <span class="position">프론트엔드 개발자</span></h3>
+                <p class="period">2022.03 ~ 2024.06</p>
+                
+                <div class="responsibilities">
+                    <h4>주요 업무</h4>
+                    <ul>
+                        <li>React 기반 웹 서비스 프론트엔드 개발 및 유지보수</li>
+                        <li>Figma 디자인 시안을 기반으로 UI 구현</li>
+                        <li>REST API 연동 및 상태 관리 (Redux Toolkit)</li>
+                        <li>반응형 웹 및 크로스 브라우저 대응</li>
+                        <li>기존 코드 리팩토링 및 성능 개선</li>
+                    </ul>
+                </div>
+                
+                <div class="achievements">
+                    <h4>주요 성과</h4>
+                    <ul>
+                        <li>공공기관 민원 서비스 웹 리뉴얼 프로젝트 참여</li>
+                        <li>초기 로딩 속도 약 30% 개선</li>
+                        <li>공통 컴포넌트 설계로 유지보수 효율 향상</li>
+                    </ul>
+                </div>
+                
+                <div class="skills">
+                    <h4>사용 기술</h4>
+                    <p>React, TypeScript, JavaScript (ES6+), HTML5, CSS3, Styled-components, Git, GitHub, Figma</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="projects" class="section">
@@ -42,9 +92,8 @@
         <p>이메일: your.email@example.com</p>
     </section>
 
-    <footer>
-        <p>© 2025 내 포트폴리오. All rights reserved.</p>
-    </footer>
+        </main>
+    </div>
 
     <script src="script.js"></script>
 </body>
